@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+// let n=[10,20,30,40,50]
+
+// console.log(n)
+// console.log (n.pop())
+
+function addData(num1,num2){        // num1 and num2 are the parameters
+    console.log(num1+num2)
+}
+addData(25,99)
+
+var a=2;
+var b=4;
+addData(a,b)
+
+// var addData=(num)=> console.log("addData")
+var addData=(num1,num2)=> num1*num2;  // parameters in single line
+var output=addData(2,4)
+console.log(output)
+
+var addData=(n,m=12)=>{
+    return n+m
+}
+var output=addData(93)
+console.log(output)
+</script>
+</html>

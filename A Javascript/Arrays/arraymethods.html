@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays method</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let l=[10,20,30,40,50]
+   
+             // using push method add data in array. it add data in the last 
+
+    l=[...l] // it copy the values
+
+    l.push(99)
+    l.push(55)
+    console.log(l)
+
+                // using the unshift method it is used to add the values in starting
+ let a=[10,20,30,40,50]
+a.unshift(23)
+console.log(a)
+
+// if we delete the element in the last then we use the pop method and also show which element is deleted
+let n=[10,20,30,40,50]
+
+console.log(n)
+console.log (n.pop())  //50
+
+// if we delete the element in the front then we use the shift method
+
+console.log(n)
+console.log(n.shift()) // 10
+
+                    // toString is used to convert the string in commas 
+let v=["riya", "Jiya", "Kusum"]
+let data=v.toString()
+console.log(data)
+
+                    // join operator is used to join the string using seperator acc to our choice
+let joinData=l.join('|')
+console.log(joinData)
+
+            //include method is used to find the members in array and give output in true or false
+let c=[10,20,30,40,66,56]
+
+console.log(c.includes(50))
+console.log(c.includes(20))
+
+
+            // concate method is used to combine the two arrays in single array
+let l1=[10,20,30,66,56]
+let l2=[12,"riya",4]
+
+var newArray=l2.concat(l1)
+console.log(newArray)
+
+            // splice method is used both delete and add
+        // delete the array elements
+let n1=[10,20,30,66,56]
+
+n1.splice(2,3)   // (2,3)   first element 2 is check the position of the array and second element 3 is check the how many elements are deleted in the array
+
+console.log(n1)
+
+            // add the array elements in center position
+let a1=[10,20,30,66,56]
+
+a1.splice(2,0,34,44)   // 2 is the index position and 0 means no any element is deleted in the array
+console.log(a1) 
+
+
+            // slice method 
+let b=[10,20,30,66,56]
+let Array=b.slice(0,3)  // 0 is the start index no. and 3 is the ending no. from where we receive the array   start value is less then end value
+
+console.log(Array)
+
+
+        // flat method describe if we have mutidimensional array we receive the array in single line 
+
+let c1=[10,20,30,[77,60],66,56,[44,55]]
+var newArray=c1.flat();
+console.log(newArray)
+
+
+                        // update the array elements
+
+let q=[10,20,30,77,60,66,56]
+
+q[2]=33; // q[2] is the position and 33 is the value which we update on 2 index 
+console.log(q)
+
+</script>
+</html>

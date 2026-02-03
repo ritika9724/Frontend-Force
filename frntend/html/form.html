@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in HTML</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Enquiry form</legend>
+        <form method="" action="">
+            <label>Name</label><br>
+            <input type="text" pattern="[a-zA-Z]{3,40}" placeholder="Enter the name"><br>
+
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter the email"><br>
+
+            <label>Phone No.</label><br>
+            <input type="tel" pattern="[0-9]{10}" title="Enter the valid phone number"
+                placeholder="Enter the phone No."><br>
+
+            <label>password</label><br>
+            <input type="password" placeholder="Enter the password" title="Please enter valid pasword"
+                pattern="[0-9]{5}"><br>
+
+            <label>Gender</label><br>
+            <input type="radio" value=Male name="gender">Male
+            <input type="radio" value=Female name="gender">Female
+            <input type="radio" value=other name="gender">Other<br>
+
+            <label>Courses</label><br>
+            <input type="checkbox" value="PHP">PHP
+            <input type="checkbox" value="HTML">HTML
+            <input type="checkbox" value="C++">C++
+            <input type="checkbox" value="JAVA">JAVA<br>
+
+            <label>Country</label><br>
+            <select>
+                <option>---Select country---</option>
+                <option value="India">India</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Rajsthan">Rajsthan</option>
+            </select> <br>  
+
+            <label>Course</label><br>
+            <select>
+          <option>---Select courses---</option>
+  
+                <optgroup label="Frontend">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JS</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option>PHP</option>
+                    <option>Nodejs</option>
+                    <option>MongoDB</option>
+                </optgroup>
+            </select> <br>
+
+            <label>message</label><br>
+            <textarea></textarea><br>
+
+            <label>Upload Photo</label><br>
+            <input type="file"><br>
+
+            <button type="Submit">Submit</button><br>
+            <input type="submit" value="Go">
+        </form>
+    </fieldset>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form inputs in HTML</title>
+</head>
+<body>
+    <fieldset>
+        <legend>HTML 5 inputs</legend>
+        <form>
+             <label>Name</label><br>
+            <input type="text" required minlength="5" maxlength="15"><br>
+
+            <label>QTY</label><br>
+            <input type="number" min="0" max="10"><br>
+
+            <label>Date</label><br>
+            <input type="date"><br>
+
+            <label>Time</label><br>
+            <input type="time"><br>
+
+             <label>week</label><br>
+            <input type="Week"><br>
+
+             <label>Month</label><br>
+            <input type="Month"><br>
+
+             <label>color</label><br>
+            <input type="color"><br>
+
+             <label>url</label><br>
+            <input type="url"><br>
+
+             <label>range</label><br>
+            <input type="range"><br>
+
+            <input type="text" list="course">
+            <datalist id="course">
+                <option value="PHP"/>
+                <option value="HTMl"/>
+                <option value="JAVA"/>
+                <option value="C++"/>
+             </datalist><br>
+             
+             <input type="reset" value="Reset"><br>
+             <button type="reset">Reset</button><br>
+             <button type="Submit">Submit</button><br>
+
+        </form>
+    </fieldset>
+</body>
+</html>

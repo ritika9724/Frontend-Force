@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <!-- using getelementby id -->
+    <h1 id="heading"> Welcome <u>to</u> WS</h1>
+    <div id="res"> </div>
+
+            <!-- using getelementsbytagname -->
+    <p>My</p>
+    <p>Name is</p>
+    <p>Ritika</p>
+
+            <!-- using getelementsbyclassname -->
+    <p class="para">My</p>
+    <p class="para">Name is</p>
+    <p class="para">Ritika</p>
+
+            <!--document.querySelector-->
+    <h1>Hello World</h1>
+    <h1 id="heading2">Welcome to WS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cum impedit soluta ipsum molestias deserunt? A, soluta. Optio maxime officia consequuntur atque unde cumque ex molestias pariatur sint? Corrupti, libero.</p>
+
+            <!-- document.querySelectorAll -->
+    <h3>Welcome</h3>
+    <h3>IIP</h3>
+    <h3>WS</h3>
+    <h3>Hello</h3>
+
+</body>
+<script>
+                // document.getElementById
+
+var headingElement=document.getElementById('heading') //identify by unique id
+var resElement=document.getElementById("res")
+console.log(headingElement.innerText)  //innerText means to collect only text data
+console.log(headingElement.innerHTML)  //innerHtml means to collect the data with the tags
+
+resElement.innerHTML=headingElement.innerHTML;
+
+
+                // document.getElementByTagname
+var pAllTag=document.getElementsByTagName("p")
+console.log(pAllTag[1].innerHTML)
+
+                // document.getelementsbyclassname
+var pAllTag=document.getElementsByClassName("para")
+console.log(pAllTag)
+console.log(pAllTag[2].innerHTML)
+
+                // document.querySelector
+var headingElement=document.querySelector("h1")
+console.log(headingElement)
+
+var heading2Element=document.querySelector("#heading2")
+console.log(heading2Element)
+
+                // document.querrySelectorAll   it create a nodelist
+var allHeading=document.querySelectorAll("h3")
+
+allHeading.forEach((item,index)=>{
+    console.log(item.innerHTML)
+})
+
+console.log(allHeading)
+
+                
+</script>
+</html>

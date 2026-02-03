@@ -1,0 +1,37 @@
+/* .flexExample{
+    width: 1320px;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-direction: row;
+
+}
+
+.FlexItems{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width:500px;
+    margin:10px;
+} */
+
+.flexExampleNew{
+    width:1200px;
+    margin:auto;
+    margin-bottom:50px;
+    display:flex;
+    gap:20px;
+    align-items:flex-end;
+    justify-content: space-around;
+}
+
+.items{
+    width:200px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+
+.items img{
+    width:50px;
+}

@@ -1,0 +1,42 @@
+p{
+    color:brown
+}
+
+.main p{
+    font-size:x-large;
+    color:blue
+}
+
+.main p:first-child{
+    color:chartreuse;
+}
+
+.main p:nth-child(3){
+    color:pink;
+}
+
+.main p{
+    color:pink;
+}
+
+/*no work */
+.main.mainInner{
+    width:1170px;
+    background-color: blue;
+    margin:auto;  
+}
+
+.hoverbox{
+    width:300px;
+    height:300px;
+    background-color: blue;
+    transition:10s;
+}
+
+.hoverbox:hover{
+    background-color: bisque;
+    color:black;
+}
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Num1 <input type="text" class="input" placeholder="Enter the value1">  <br>
+    Num2 <input type="text" class="input" placeholder="Enter the value2">  <br>
+    <button>Save</button>  <br>
+    output <input type="text" class="input" placeholder="Output">
+
+</body>
+
+<script>
+    var btn=document.querySelector("button")
+    var allInput=document.querySelectorAll(".input")
+    // console.log(allInput)
+    btn.addEventListener("click", ()=>{
+        // alert("welcome")
+    var input1Value= Number(allInput[0].value);
+    var input2Value=Number(allInput[1].value);
+
+     var output=input1Value-input2Value;
+     allInput[2].value=output;
+
+    //  allInput[0].value=''
+    //  allInput[1].value=''
+
+    // console.log(output)
+    // console.log(input1Value, input2Value)
+    })
+
+</script>
+</html>

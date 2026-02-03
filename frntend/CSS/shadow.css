@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:sans-serif;
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+/* h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: -10px 0px 4px blue, 0px 0px 5px red; 
+}
+
+.main{
+    width:300px;
+    height:300px;
+    box-shadow:0px 0px 10px 2px blue;
+    margin:auto;
+    border:2px solid black;
+}  */
+
+
+.project-section{
+    width:100%;
+    height:500px;
+    background:#f7f2ec;
+}
+
+.project-section-mid{
+    width:1320px;
+    margin:auto;
+}

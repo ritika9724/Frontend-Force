@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+              
+<script>
+                      // normal function
+    function displayName(){
+    console.log("Welcome to WS")
+}
+displayName()  // call the function
+
+                    // function with parameters
+function addData(num1,num2){        // num1 and num2 are the parameters
+    console.log(num1+num2)
+}
+addData(25,99)
+
+var a=2;
+var b=4;
+addData(a,b)
+
+                    // return type function
+
+function addData(num1,num2){
+  return num1+num2;  // return is used to hold the values and if we print then it will give the output
+}
+
+var output=addData(10,20)
+console.log(output)
+
+                        // Arrow function  basically used in modern Javascript
+var addData=()=> console.log("Welcome")
+
+var addData=(num1,num2)=> num1*num2;  // parameters in single line
+var output=addData(2,4)
+console.log(output)
+
+var addData=(n,m)=>{
+    return n+m
+}
+var output=addData(93,124)
+console.log(output)
+
+                    // defalut value
+var addData=(n,m=12)=>{
+    return n+m
+}
+var output=addData(93)
+console.log(output)
+
+
+// let obj={
+//     "cname":"WS",
+//     "name":"Ritika",
+//     cinfo:()=>{
+//         console.log(this)
+//     }
+// }
+// obj.cinfo()
+
+                        // call back function
+let displayData=(res)=>{
+    return res
+}
+var sumData=(num1,num2,result)=>{
+    return result(num1+num2)
+}
+
+var output=sumData(20,30,displayData)
+console.log(output)
+
+
+                    // for each work on the array it is uesd to itreate the array
+var l=[10,20,30,40,50]
+l.forEach((v,i)=> {
+    console.log(v,i)    // v is used to access the value and i is used to access the index values
+})
+
+            // map function is also work on the array it works on the existing array and make a new array but doesnot any change on the existing array
+var l=[10,20,30,40,50]
+
+var finalAns=l.map((v,i)=> v+i)  // it makes a new array
+console.log(finalAns)
+
+                    //fiter it is used to filter the array and give the answer
+var l=[99,77,66,55,44,43,55,88]
+var filterData=l.filter((v,i)=> v%2==0)
+console.log(filterData)
+
+                    //reduce is used to reduce the array and make the final answer
+var l=[55,44,43,55,88]
+var finalAns=l.reduce((total,v,i)=>total+v) // reduce give the single answer
+console.log(finalAns)
+</script>
+</html>
+
+
+<!-- when this keyword used in arrow function then it will return the WINDOW FUNCTION 
+    and when it is used in normal function then it will return that OBJECT which we used -->
